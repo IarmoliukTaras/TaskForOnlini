@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9DA8CD0B1F370E5600168178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0A1F370E5600168178 /* AppDelegate.swift */; };
-		9DA8CD0D1F370E5600168178 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0C1F370E5600168178 /* FirstViewController.swift */; };
+		9DA8CD0D1F370E5600168178 /* TopNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */; };
 		9DA8CD0F1F370E5600168178 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0E1F370E5600168178 /* SecondViewController.swift */; };
 		9DA8CD121F370E5600168178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD101F370E5600168178 /* Main.storyboard */; };
 		9DA8CD141F370E5600168178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD131F370E5600168178 /* Assets.xcassets */; };
 		9DA8CD171F370E5600168178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */; };
+		9DA8CD231F37113E00168178 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD221F37113E00168178 /* NetworkService.swift */; };
+		9DA8CD251F3711D400168178 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD241F3711D400168178 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DA8CD071F370E5600168178 /* TaskForOnlini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForOnlini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA8CD0A1F370E5600168178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DA8CD0C1F370E5600168178 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsVC.swift; sourceTree = "<group>"; };
 		9DA8CD0E1F370E5600168178 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9DA8CD111F370E5600168178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA8CD131F370E5600168178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA8CD161F370E5600168178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA8CD181F370E5600168178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA8CD221F37113E00168178 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9DA8CD241F3711D400168178 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		9DA8CD091F370E5600168178 /* TaskForOnlini */ = {
 			isa = PBXGroup;
 			children = (
+				9DA8CD211F37112300168178 /* Service */,
+				9DA8CD201F370F5000168178 /* View */,
+				9DA8CD1F1F370F4900168178 /* Controller */,
+				9DA8CD1E1F370F3E00168178 /* Model */,
 				9DA8CD0A1F370E5600168178 /* AppDelegate.swift */,
-				9DA8CD0C1F370E5600168178 /* FirstViewController.swift */,
-				9DA8CD0E1F370E5600168178 /* SecondViewController.swift */,
-				9DA8CD101F370E5600168178 /* Main.storyboard */,
 				9DA8CD131F370E5600168178 /* Assets.xcassets */,
-				9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */,
 				9DA8CD181F370E5600168178 /* Info.plist */,
 			);
 			path = TaskForOnlini;
+			sourceTree = "<group>";
+		};
+		9DA8CD1E1F370F3E00168178 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD241F3711D400168178 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA8CD1F1F370F4900168178 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */,
+				9DA8CD0E1F370E5600168178 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DA8CD201F370F5000168178 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD101F370E5600168178 /* Main.storyboard */,
+				9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DA8CD211F37112300168178 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD221F37113E00168178 /* NetworkService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA8CD251F3711D400168178 /* News.swift in Sources */,
 				9DA8CD0F1F370E5600168178 /* SecondViewController.swift in Sources */,
 				9DA8CD0B1F370E5600168178 /* AppDelegate.swift in Sources */,
-				9DA8CD0D1F370E5600168178 /* FirstViewController.swift in Sources */,
+				9DA8CD231F37113E00168178 /* NetworkService.swift in Sources */,
+				9DA8CD0D1F370E5600168178 /* TopNewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
