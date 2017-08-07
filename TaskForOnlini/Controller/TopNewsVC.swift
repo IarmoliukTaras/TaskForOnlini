@@ -22,10 +22,13 @@ class TopNewsVC: UIViewController {
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toDetails",
+            let detailsVC = segue.destination as? NewsDetailsVC,
+            let news = sender as AnyObject as? News
+            else { return }
+        detailsVC.news = news
     }
 }
 
@@ -40,9 +43,21 @@ extension TopNewsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = newsTableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath)
-        cell.textLabel?.text = self.topNews[indexPath.row].title
-        return cell
+        if let cell = newsTableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as? NewsTableViewCell {
+            cell.updateUI(news: topNews[indexPath.row])
+            return cell
+        } else {
+            return NewsTableViewCell()
+        }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetails", sender: self.topNews[indexPath.row])
+    }
+    
 }
 

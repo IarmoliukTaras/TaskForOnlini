@@ -35,4 +35,16 @@ class NetworkService {
             
         }.resume()
     }
+    
+    func downloadImage(urlStr: String, completion: @escaping (Data) -> Void) {
+        guard let url = URL(string: urlStr) else { return }
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+            if let err = error {
+                print("ERROR:", err)
+                return
+            }
+            guard let data = data else { return }
+            completion(data)
+        }).resume()
+    }
 }
