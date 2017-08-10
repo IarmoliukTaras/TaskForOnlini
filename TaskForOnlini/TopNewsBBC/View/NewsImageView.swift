@@ -11,7 +11,6 @@ import UIKit
 let imageCache = NSCache<NSString, UIImage>()
 
 class NewsImageView: UIImageView {
-
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.borderColor = UIColor.lightGray.cgColor
@@ -26,7 +25,6 @@ class NewsImageView: UIImageView {
     }
 
 }
-
 
 extension UIImageView {
     func loadUsingCacheWith(url: String) {

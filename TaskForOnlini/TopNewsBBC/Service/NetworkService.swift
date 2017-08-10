@@ -20,7 +20,6 @@ class NetworkService {
                 print(error)
                 return
             }
-            
             guard let data = data else { return }
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
@@ -32,7 +31,6 @@ class NetworkService {
             } catch let jsonError{
                 print(jsonError)
             }
-            
         }.resume()
     }
     

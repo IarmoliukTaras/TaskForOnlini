@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6764815B7AC71C63A4CB68B4 /* Pods_TaskForOnlini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FD9C0EDC43DAFFE2BDC444 /* Pods_TaskForOnlini.framework */; };
+		9DA40C431F3B146600384598 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA40C421F3B146600384598 /* TaskTableViewCell.swift */; };
 		9DA8CD0B1F370E5600168178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0A1F370E5600168178 /* AppDelegate.swift */; };
 		9DA8CD0D1F370E5600168178 /* TopNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */; };
-		9DA8CD0F1F370E5600168178 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0E1F370E5600168178 /* SecondViewController.swift */; };
+		9DA8CD0F1F370E5600168178 /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0E1F370E5600168178 /* TodoListVC.swift */; };
 		9DA8CD121F370E5600168178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD101F370E5600168178 /* Main.storyboard */; };
 		9DA8CD141F370E5600168178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD131F370E5600168178 /* Assets.xcassets */; };
 		9DA8CD171F370E5600168178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */; };
@@ -18,13 +20,18 @@
 		9DA8CD271F373D9200168178 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD261F373D9200168178 /* NewsDetailsVC.swift */; };
 		9DA8CD291F373DF400168178 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD281F373DF400168178 /* NewsTableViewCell.swift */; };
 		9DA8CD2B1F373ED800168178 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD2A1F373ED800168178 /* NewsImageView.swift */; };
+		9DA8CD2D1F38FF3D00168178 /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD2C1F38FF3D00168178 /* TaskVC.swift */; };
+		9DA8CD2F1F39033E00168178 /* SQLiteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD2E1F39033E00168178 /* SQLiteService.swift */; };
+		9DA8CD311F39A9CA00168178 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD301F39A9CA00168178 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87E1772BEB7B94AE0647FB8D /* Pods-TaskForOnlini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForOnlini.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskForOnlini/Pods-TaskForOnlini.debug.xcconfig"; sourceTree = "<group>"; };
+		9DA40C421F3B146600384598 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		9DA8CD071F370E5600168178 /* TaskForOnlini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForOnlini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA8CD0A1F370E5600168178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsVC.swift; sourceTree = "<group>"; };
-		9DA8CD0E1F370E5600168178 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9DA8CD0E1F370E5600168178 /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
 		9DA8CD111F370E5600168178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA8CD131F370E5600168178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA8CD161F370E5600168178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +41,11 @@
 		9DA8CD261F373D9200168178 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		9DA8CD281F373DF400168178 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		9DA8CD2A1F373ED800168178 /* NewsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageView.swift; sourceTree = "<group>"; };
+		9DA8CD2C1F38FF3D00168178 /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
+		9DA8CD2E1F39033E00168178 /* SQLiteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteService.swift; sourceTree = "<group>"; };
+		9DA8CD301F39A9CA00168178 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C4FD9C0EDC43DAFFE2BDC444 /* Pods_TaskForOnlini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskForOnlini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61E91827C3E2CA053F73BC1 /* Pods-TaskForOnlini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForOnlini.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskForOnlini/Pods-TaskForOnlini.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6764815B7AC71C63A4CB68B4 /* Pods_TaskForOnlini.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BC8C02B9F4BA95145EA1435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4FD9C0EDC43DAFFE2BDC444 /* Pods_TaskForOnlini.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DA40C441F3BC0CB00384598 /* TopNewsBBC */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD211F37112300168178 /* Service */,
+				9DA8CD1E1F370F3E00168178 /* Model */,
+				9DA8CD201F370F5000168178 /* View */,
+				9DA8CD1F1F370F4900168178 /* Controller */,
+			);
+			path = TopNewsBBC;
+			sourceTree = "<group>";
+		};
+		9DA40C451F3BC0F600384598 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				9DA40C461F3BC0FF00384598 /* Service */,
+				9DA40C471F3BC11100384598 /* Model */,
+				9DA40C481F3BC11700384598 /* View */,
+				9DA40C491F3BC11E00384598 /* Controller */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		9DA40C461F3BC0FF00384598 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD2E1F39033E00168178 /* SQLiteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9DA40C471F3BC11100384598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD301F39A9CA00168178 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA40C481F3BC11700384598 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DA40C421F3B146600384598 /* TaskTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DA40C491F3BC11E00384598 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DA8CD0E1F370E5600168178 /* TodoListVC.swift */,
+				9DA8CD2C1F38FF3D00168178 /* TaskVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9DA8CCFE1F370E5600168178 = {
 			isa = PBXGroup;
 			children = (
 				9DA8CD091F370E5600168178 /* TaskForOnlini */,
 				9DA8CD081F370E5600168178 /* Products */,
+				CC522A1F03B176FF6CA03CBD /* Pods */,
+				9BC8C02B9F4BA95145EA1435 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,10 +144,10 @@
 		9DA8CD091F370E5600168178 /* TaskForOnlini */ = {
 			isa = PBXGroup;
 			children = (
-				9DA8CD211F37112300168178 /* Service */,
-				9DA8CD201F370F5000168178 /* View */,
-				9DA8CD1F1F370F4900168178 /* Controller */,
-				9DA8CD1E1F370F3E00168178 /* Model */,
+				9DA40C451F3BC0F600384598 /* ToDoList */,
+				9DA40C441F3BC0CB00384598 /* TopNewsBBC */,
+				9DA8CD101F370E5600168178 /* Main.storyboard */,
+				9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */,
 				9DA8CD0A1F370E5600168178 /* AppDelegate.swift */,
 				9DA8CD131F370E5600168178 /* Assets.xcassets */,
 				9DA8CD181F370E5600168178 /* Info.plist */,
@@ -90,7 +168,6 @@
 			children = (
 				9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */,
 				9DA8CD261F373D9200168178 /* NewsDetailsVC.swift */,
-				9DA8CD0E1F370E5600168178 /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,8 +175,6 @@
 		9DA8CD201F370F5000168178 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9DA8CD101F370E5600168178 /* Main.storyboard */,
-				9DA8CD151F370E5600168178 /* LaunchScreen.storyboard */,
 				9DA8CD281F373DF400168178 /* NewsTableViewCell.swift */,
 				9DA8CD2A1F373ED800168178 /* NewsImageView.swift */,
 			);
@@ -114,6 +189,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		CC522A1F03B176FF6CA03CBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87E1772BEB7B94AE0647FB8D /* Pods-TaskForOnlini.debug.xcconfig */,
+				C61E91827C3E2CA053F73BC1 /* Pods-TaskForOnlini.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DA8CD1B1F370E5600168178 /* Build configuration list for PBXNativeTarget "TaskForOnlini" */;
 			buildPhases = (
+				A21471F2AB828B535D5FE241 /* [CP] Check Pods Manifest.lock */,
 				9DA8CD031F370E5600168178 /* Sources */,
 				9DA8CD041F370E5600168178 /* Frameworks */,
 				9DA8CD051F370E5600168178 /* Resources */,
+				AC0FADAC46CB66CFC1920415 /* [CP] Embed Pods Frameworks */,
+				BF8E4EF4B645C0BDD4A715CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +267,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A21471F2AB828B535D5FE241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0FADAC46CB66CFC1920415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskForOnlini/Pods-TaskForOnlini-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8E4EF4B645C0BDD4A715CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskForOnlini/Pods-TaskForOnlini-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DA8CD031F370E5600168178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,8 +323,12 @@
 				9DA8CD251F3711D400168178 /* News.swift in Sources */,
 				9DA8CD2B1F373ED800168178 /* NewsImageView.swift in Sources */,
 				9DA8CD291F373DF400168178 /* NewsTableViewCell.swift in Sources */,
-				9DA8CD0F1F370E5600168178 /* SecondViewController.swift in Sources */,
+				9DA8CD2F1F39033E00168178 /* SQLiteService.swift in Sources */,
+				9DA8CD311F39A9CA00168178 /* Task.swift in Sources */,
+				9DA8CD0F1F370E5600168178 /* TodoListVC.swift in Sources */,
+				9DA8CD2D1F38FF3D00168178 /* TaskVC.swift in Sources */,
 				9DA8CD271F373D9200168178 /* NewsDetailsVC.swift in Sources */,
+				9DA40C431F3B146600384598 /* TaskTableViewCell.swift in Sources */,
 				9DA8CD0B1F370E5600168178 /* AppDelegate.swift in Sources */,
 				9DA8CD231F37113E00168178 /* NetworkService.swift in Sources */,
 				9DA8CD0D1F370E5600168178 /* TopNewsVC.swift in Sources */,
@@ -327,6 +466,7 @@
 		};
 		9DA8CD1C1F370E5600168178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E1772BEB7B94AE0647FB8D /* Pods-TaskForOnlini.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5H8Z4UVXQ;
@@ -341,6 +481,7 @@
 		};
 		9DA8CD1D1F370E5600168178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61E91827C3E2CA053F73BC1 /* Pods-TaskForOnlini.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5H8Z4UVXQ;

@@ -58,6 +58,5 @@ extension TopNewsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toDetails", sender: self.topNews[indexPath.row])
     }
-    
 }
 
