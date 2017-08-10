@@ -1,0 +1,6 @@
+framework module Pods_TaskForOnlini {
+  umbrella header "Pods-TaskForOnlini-umbrella.h"
+
+  export *
+  module * { export * }
+}
