@@ -20,7 +20,7 @@ class TaskVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleTextField.text = task.title
-        self.descriptionTextView.text = task.description
+        self.descriptionTextView.text = task.about
     }
     
     
@@ -37,7 +37,10 @@ class TaskVC: UIViewController {
             guard let title = self.titleTextField.text,
                 let description = self.descriptionTextView.text
                 else { return }
-            SQLiteService.shared.editTask(id: self.task.id, title: title, description: description)
+            task.title = title
+            task.about = description
+            task.status = STATUS_ACTIVE
+            PresistenceService.saveContext()
             sender.setTitle("EDIT", for: .normal)
             editMode = false
         } else {

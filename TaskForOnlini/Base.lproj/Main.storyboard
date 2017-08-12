@@ -251,18 +251,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-x6-9bo">
-                                                    <rect key="frame" x="13" y="13" width="349" height="72.5"/>
+                                                    <rect key="frame" x="8" y="13" width="359" height="72.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hx-NG-BNL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="199" height="72.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="219" height="72.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ao0-7D-3sz">
-                                                            <rect key="frame" x="199" y="0.0" width="150" height="72.5"/>
+                                                            <rect key="frame" x="219" y="0.0" width="140" height="72.5"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="150" id="bf6-87-o9d"/>
+                                                                <constraint firstAttribute="width" constant="140" id="bf6-87-o9d"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                             <nil key="textColor"/>
@@ -273,8 +273,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ffb-x6-9bo" secondAttribute="bottom" constant="5" id="Bn2-TB-pVx"/>
-                                                <constraint firstItem="ffb-x6-9bo" firstAttribute="leading" secondItem="ET4-Q4-giC" secondAttribute="leadingMargin" constant="5" id="eiB-hC-w37"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ffb-x6-9bo" secondAttribute="trailing" constant="5" id="oD3-Z8-Lxe"/>
+                                                <constraint firstItem="ffb-x6-9bo" firstAttribute="leading" secondItem="ET4-Q4-giC" secondAttribute="leadingMargin" id="eiB-hC-w37"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ffb-x6-9bo" secondAttribute="trailing" id="oD3-Z8-Lxe"/>
                                                 <constraint firstItem="ffb-x6-9bo" firstAttribute="top" secondItem="ET4-Q4-giC" secondAttribute="topMargin" constant="5" id="sLy-PL-z1h"/>
                                             </constraints>
                                         </tableViewCellContentView>

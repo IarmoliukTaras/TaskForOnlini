@@ -13,7 +13,7 @@ class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    var taskId: Int!
+    var task: Task!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +23,7 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func setUpUI(task: Task) {
-        self.taskId          = task.id
+        self.task = task
         self.titleLabel.text = task.title
         self.dateLabel.text  = task.date
         
@@ -50,7 +50,8 @@ extension TaskTableViewCell {
     @objc func swipeAction(swipe: UISwipeGestureRecognizer) {
         switch swipe.direction.rawValue {
         case 1:
-            SQLiteService.shared.completeTask(id: self.taskId)
+            task.status = STATUS_COMPLETED
+            PresistenceService.saveContext()
             crossText()
         default:
             break

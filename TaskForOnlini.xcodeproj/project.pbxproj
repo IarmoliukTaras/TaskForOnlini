@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6764815B7AC71C63A4CB68B4 /* Pods_TaskForOnlini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FD9C0EDC43DAFFE2BDC444 /* Pods_TaskForOnlini.framework */; };
+		9DA262DD1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA262DB1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodeld */; };
+		9DA262DF1F3F3CDF00CE411F /* PresistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA262DE1F3F3CDF00CE411F /* PresistenceService.swift */; };
+		9DA262E61F3F401F00CE411F /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA262E41F3F401F00CE411F /* Task+CoreDataClass.swift */; };
+		9DA262E71F3F401F00CE411F /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA262E51F3F401F00CE411F /* Task+CoreDataProperties.swift */; };
 		9DA40C431F3B146600384598 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA40C421F3B146600384598 /* TaskTableViewCell.swift */; };
 		9DA8CD0B1F370E5600168178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0A1F370E5600168178 /* AppDelegate.swift */; };
 		9DA8CD0D1F370E5600168178 /* TopNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8CD0C1F370E5600168178 /* TopNewsVC.swift */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		87E1772BEB7B94AE0647FB8D /* Pods-TaskForOnlini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskForOnlini.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskForOnlini/Pods-TaskForOnlini.debug.xcconfig"; sourceTree = "<group>"; };
+		9DA262DC1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskForOnlini.xcdatamodel; sourceTree = "<group>"; };
+		9DA262DE1F3F3CDF00CE411F /* PresistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresistenceService.swift; sourceTree = "<group>"; };
+		9DA262E41F3F401F00CE411F /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9DA262E51F3F401F00CE411F /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9DA40C421F3B146600384598 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		9DA8CD071F370E5600168178 /* TaskForOnlini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskForOnlini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA8CD0A1F370E5600168178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA8CD2E1F39033E00168178 /* SQLiteService.swift */,
+				9DA262DE1F3F3CDF00CE411F /* PresistenceService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -101,6 +110,8 @@
 		9DA40C471F3BC11100384598 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9DA262E41F3F401F00CE411F /* Task+CoreDataClass.swift */,
+				9DA262E51F3F401F00CE411F /* Task+CoreDataProperties.swift */,
 				9DA8CD301F39A9CA00168178 /* Task.swift */,
 			);
 			path = Model;
@@ -151,6 +162,7 @@
 				9DA8CD0A1F370E5600168178 /* AppDelegate.swift */,
 				9DA8CD131F370E5600168178 /* Assets.xcassets */,
 				9DA8CD181F370E5600168178 /* Info.plist */,
+				9DA262DB1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodeld */,
 			);
 			path = TaskForOnlini;
 			sourceTree = "<group>";
@@ -321,11 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA8CD251F3711D400168178 /* News.swift in Sources */,
+				9DA262E61F3F401F00CE411F /* Task+CoreDataClass.swift in Sources */,
 				9DA8CD2B1F373ED800168178 /* NewsImageView.swift in Sources */,
 				9DA8CD291F373DF400168178 /* NewsTableViewCell.swift in Sources */,
+				9DA262DD1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodeld in Sources */,
 				9DA8CD2F1F39033E00168178 /* SQLiteService.swift in Sources */,
+				9DA262E71F3F401F00CE411F /* Task+CoreDataProperties.swift in Sources */,
 				9DA8CD311F39A9CA00168178 /* Task.swift in Sources */,
 				9DA8CD0F1F370E5600168178 /* TodoListVC.swift in Sources */,
+				9DA262DF1F3F3CDF00CE411F /* PresistenceService.swift in Sources */,
 				9DA8CD2D1F38FF3D00168178 /* TaskVC.swift in Sources */,
 				9DA8CD271F373D9200168178 /* NewsDetailsVC.swift in Sources */,
 				9DA40C431F3B146600384598 /* TaskTableViewCell.swift in Sources */,
@@ -516,6 +532,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DA262DB1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DA262DC1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodel */,
+			);
+			currentVersion = 9DA262DC1F3F3CAB00CE411F /* TaskForOnlini.xcdatamodel */;
+			path = TaskForOnlini.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DA8CCFF1F370E5600168178 /* Project object */;
 }

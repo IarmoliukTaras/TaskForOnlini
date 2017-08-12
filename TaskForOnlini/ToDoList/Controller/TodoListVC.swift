@@ -30,7 +30,7 @@ class TodoListVC: UIViewController {
         let addAction = UIAlertAction(title: "Add", style: .default) { (_) in
             guard let title = alert.textFields?.first?.text, let description = alert.textFields?.last?.text else { return }
             if !title.isEmpty && !description.isEmpty {
-                SQLiteService.shared.insertTask(title: title, description: description)
+                PresistenceService.addTask(title: title, about: description)
                 self.reloadTasksTable()
             }
         }
@@ -48,7 +48,7 @@ class TodoListVC: UIViewController {
     }
     
     fileprivate func reloadTasksTable() {
-        self.tasks = SQLiteService.shared.getTasks()
+        self.tasks = PresistenceService.getTasks()
         self.tasksTableView.reloadData()
     }
     
@@ -90,9 +90,9 @@ extension TodoListVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            let id = tasks[indexPath.row].id
+            let task = tasks[indexPath.row]
             self.tasks.remove(at: indexPath.row)
-            SQLiteService.shared.deleteTask(id: id)
+            PresistenceService.delete(task: task)
             self.tasksTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
